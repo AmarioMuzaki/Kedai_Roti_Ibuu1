@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kedai Roti Ibu Saya — Roti Hangat, Rasa Rumah</title>
+<meta name="description" content="Kedai Roti Ibu Saya — roti bakar, pizza mini, mie aceh, kwetiaw, dan minuman hangat di Jl. Tamansari No.66, Bandung. Buka setiap hari 08.00–21.30.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%9E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 500 500" aria-hidden="true">
+        <defs>
+          <radialGradient id="bgGradN" cx="50%" cy="42%" r="65%">
+            <stop offset="0%" stop-color="#FBF1E1"/><stop offset="100%" stop-color="#F3E1C5"/>
+          </radialGradient>
+          <linearGradient id="breadGradN" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#E3A25C"/><stop offset="55%" stop-color="#C97D3C"/><stop offset="100%" stop-color="#A85F2A"/>
+          </linearGradient>
+        </defs>
+        <circle cx="250" cy="250" r="238" fill="url(#bgGradN)" stroke="#8C4A24" stroke-width="6"/>
+        <path d="M170 300 C170 240 205 205 250 205 C295 205 330 240 330 300 L330 305 C330 320 314 330 250 330 C186 330 170 320 170 305 Z" fill="url(#breadGradN)" stroke="#7A4420" stroke-width="5"/>
+      </svg>
+      <span>
+        <span class="brand-name">Kedai Roti Ibu Saya</span>
+        <span class="brand-tag">Roti Hangat, Rasa Rumah</span>
+      </span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#galeri">Galeri</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#ulasan">Ulasan</a>
+      <a href="#menu">Menu</a>
+      <a href="#lokasi">Lokasi &amp; Jam Buka</a>
+      <a class="btn btn-primary" href="https://wa.me/6281315971723?text=Halo%20Kedai%20Roti%20Ibu%20Saya%2C%20saya%20mau%20pesan" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<main id="top">
+<section class="top-screenshot" aria-label="Tampilan Kedai Roti Ibu Saya">
+  <div class="wrap">
+    <img src="Screenshot 2026-09-29 191743.jpg" alt="Screenshot Kedai Roti Ibu Saya" fetchpriority="high">
+  </div>
+</section>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow-line"><span class="dot"></span><span>Jl. Tamansari No.66, Coblong, Bandung</span></div>
+      <h1>Roti bakar dan sarapan hangat rasa rumah.</h1>
+      <p class="lede">Dari roti bakar cokelat keju sampai mie Aceh dan kwetiaw goreng — kami masak setiap pesanan setelah kamu order, bukan dari tumpukan yang sudah dingin.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://wa.me/6281315971723?text=Halo%20Kedai%20Roti%20Ibu%20Saya%2C%20saya%20mau%20pesan" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+        <a class="btn btn-ghost" href="#menu">Lihat Menu</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>08.00–21.30</strong><span>Buka setiap hari</span></div>
+        <div><strong>Rp5.000</strong><span>Mulai dari roti bakar</span></div>
+        <div><strong>8 menit</strong><span>Rata-rata waktu masak</span></div>
+      </div>
+      <div class="store-status" id="storeStatus" role="status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="storeStatusText">Memeriksa jam buka...</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOD GALLERY ================= -->
+<section class="food-gallery" id="galeri" aria-label="Galeri makanan">
+  <div class="wrap">
+    <div class="hero-gallery">
+      <div class="hero-art" id="foodSlideshow" role="region" aria-roledescription="carousel" aria-label="Galeri makanan">
+        <img class="slide-photo" id="foodSlideImage" src="GALERI MAKAN1.jpg" alt="Foto makanan Kedai Roti Ibu Saya 1">
+        <div class="slide-caption" aria-live="polite">
+          <span id="foodSlideCount">01 / 05</span>
+          <strong>Galeri Makanan</strong>
+        </div>
+        <button class="slide-control slide-previous" id="foodSlidePrevious" type="button" aria-label="Foto sebelumnya">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="slide-control slide-next" id="foodSlideNext" type="button" aria-label="Foto berikutnya">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="slide-dots" id="foodSlideDots" role="group" aria-label="Pilih foto"></div>
+      </div>
+      <div class="gallery-pair" aria-label="Foto makanan lainnya">
+        <img src="GALERI MAKAN 6.jpg" alt="Foto makanan Kedai Roti Ibu Saya 6" loading="lazy">
+        <img src="GALERI MAKAN 7.jpg" alt="Foto makanan Kedai Roti Ibu Saya 7" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="tentang">
+  <div class="wrap about-content">
+      <div class="section-head" style="margin-bottom:20px;">
+        <div class="eyebrow-line"><span class="dot"></span><span>Cerita kami</span></div>
+        <h2>Dimulai dari dapur rumah, diteruskan ke Tamansari</h2>
+        <p>Kedai Roti Ibu Saya berawal dari kebiasaan sederhana: roti bakar hangat yang dibuat sendiri untuk keluarga. Sekarang resep itu kami bagikan lewat kedai kecil di Tamansari — melayani mahasiswa, pekerja, dan warga sekitar yang butuh makan enak tanpa ribet, dari pagi sampai malam.</p>
+      </div>
+      <div class="about-card">
+        <h3>Kenapa banyak yang balik lagi</h3>
+        <p>Semua dimasak setelah kamu pesan — mie Aceh dan kwetiaw digoreng panas, roti bakar baru diangkat dari teflon. Porsi pas, harga bersahabat, cocok jadi langganan harian.</p>
+      </div>
+    </div>
+</section>
+
+<!-- ================= CUSTOMER COMMENTS ================= -->
+<section class="testimonials" id="ulasan" aria-labelledby="testimonialsTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-line"><span class="dot"></span><span>Kata pelanggan</span></div>
+      <h2 id="testimonialsTitle">Cerita kecil dari meja kedai</h2>
+      <p class="review-disclaimer">Beberapa komentar pelanggan yang telah berkunjung ke Kedai Roti Ibu Saya.</p>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <span class="review-label">Komentar</span>
+        <blockquote>“Roti bakarnya hangat dan rasanya pas. Harganya juga bersahabat untuk camilan setiap hari.”</blockquote>
+        <div class="reviewer">
+          <span class="reviewer-initial" aria-hidden="true">A</span>
+          <div><strong>Amario</strong><span>Pelanggan</span></div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <span class="review-label">Komentar</span>
+        <blockquote>“Mie Aceh-nya gurih dan porsinya pas. Pesan lewat WhatsApp juga praktis.”</blockquote>
+        <div class="reviewer">
+          <span class="reviewer-initial" aria-hidden="true">C</span>
+          <div><strong>Christopher</strong><span>Pelanggan</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-line"><span class="dot"></span><span>Menu</span></div>
+      <h2>Pilih menu dan hitung pesananmu</h2>
+      <p>Atur jumlah tiap menu, lalu lihat total sebelum mengirim pesanan lewat WhatsApp.</p>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="tab-btn active" data-cat="all">Semua</button>
+      <button class="tab-btn" data-cat="minuman">Minuman</button>
+      <button class="tab-btn" data-cat="berat">Makanan Berat</button>
+      <button class="tab-btn" data-cat="roti">Roti Bakar</button>
+    </div>
+
+    <div class="menu-controls">
+      <label class="menu-search">
+        <span class="visually-hidden">Cari menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+        <input class="form-control" id="menuSearch" type="search" placeholder="Cari roti, minuman, atau makanan..." autocomplete="off">
+      </label>
+      <p class="menu-result-count" id="menuResultCount" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- items injected by JS -->
+    </div>
+
+    <aside class="order-summary" aria-labelledby="orderSummaryTitle">
+      <div class="order-summary-header">
+        <div>
+          <h3 id="orderSummaryTitle">Ringkasan pesanan</h3>
+          <p id="orderCount" aria-live="polite">Belum ada item</p>
+        </div>
+        <button class="order-clear" id="clearOrder" type="button" disabled>Hapus semua</button>
+      </div>
+      <p class="order-empty" id="orderEmpty">Pilih menu dan tekan “Tambah” untuk mulai menghitung.</p>
+      <ul class="order-list" id="orderList" aria-label="Item dalam pesanan"></ul>
+      <div class="order-total"><span>Total pesanan</span><strong id="orderTotal">Rp0</strong></div>
+      <a class="btn btn-primary order-submit is-disabled" id="sendOrder" href="#menu" target="_blank" rel="noopener" aria-disabled="true">Kirim pesanan ke WhatsApp</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section id="lokasi">
+  <div class="location">
+    <div class="location-inner">
+      <div>
+        <h2>Datang langsung atau tinggal chat kami</h2>
+        <p class="lede">Lokasi mudah dijangkau dari area Tamansari, Bandung. Kalau lagi malas keluar, tinggal kirim pesan — kami siapkan pesananmu.</p>
+        <ul class="info-list">
+          <li>
+            <span class="ico">📍</span>
+            <div>
+              <strong>Alamat</strong>
+              <span>Jl. Tamansari No.66, Lb. Siliwangi, Kec. Coblong, Kota Bandung, Jawa Barat 40132</span>
+              <button class="copy-address" id="copyAddress" type="button">Salin alamat</button>
+            </div>
+          </li>
+          <li>
+            <span class="ico">📞</span>
+            <div><strong>WhatsApp / Telepon</strong><span>0813-1597-1723</span></div>
+          </li>
+        </ul>
+        <a class="map-link" href="https://maps.app.goo.gl/XCVhXnKYjWAeARGg8" target="_blank" rel="noopener">Buka lokasi di Google Maps →</a>
+      </div>
+      <div class="hours-card">
+        <h3>Jam Buka</h3>
+        <div class="hours-row"><span>Senin – Minggu</span><strong>08.00 – 21.30</strong></div>
+        <div class="hours-row"><span>Rata-rata masak</span><strong>~8 menit</strong></div>
+        <div class="hours-row"><span>Metode pesan</span><strong>Datang / WhatsApp</strong></div>
+        <a class="btn btn-primary" style="margin-top:22px;width:100%;justify-content:center;" href="https://wa.me/6281315971723?text=Halo%20Kedai%20Roti%20Ibu%20Saya%2C%20saya%20mau%20pesan" target="_blank" rel="noopener">Chat &amp; Pesan Sekarang</a>
+      </div>
+    </div>
+    <div class="map-panel">
+      <div class="map-copy">
+        <div class="eyebrow-line"><span class="dot"></span><span>Petunjuk arah</span></div>
+        <h3>Temukan kami di Tamansari</h3>
+        <p>Peta interaktif untuk melihat lokasi kedai dan lingkungan sekitar sebelum berkunjung.</p>
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Jl.%20Tamansari%20No.66%2C%20Bandung" target="_blank" rel="noopener">Buka petunjuk arah</a>
+      </div>
+      <div class="map-frame">
+        <iframe
+          title="Peta lokasi Kedai Roti Ibu Saya di Tamansari, Bandung"
+          src="https://www.google.com/maps?q=Jl.%20Tamansari%20No.66%2C%20Bandung&amp;z=16&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="brand" style="display:flex;">
+      <svg viewBox="0 0 500 500" width="34" height="34" aria-hidden="true">
+        <circle cx="250" cy="250" r="238" fill="#F3E1C5" stroke="#8C4A24" stroke-width="8"/>
+        <path d="M170 300 C170 240 205 205 250 205 C295 205 330 240 330 300 L330 305 C330 320 314 330 250 330 C186 330 170 320 170 305 Z" fill="#C97D3C" stroke="#7A4420" stroke-width="6"/>
+      </svg>
+      <span class="brand-name">Kedai Roti Ibu Saya</span>
+    </div>
+    <p>Jl. Tamansari No.66, Lb. Siliwangi, Kec. Coblong, Kota Bandung, Jawa Barat 40132 · 0813-1597-1723</p>
+    <p style="margin-top:6px;">&copy; <span id="year"></span> Kedai Roti Ibu Saya. Dibuat dengan ❤ untuk pelanggan setia.</p>
+  </div>
+</footer>
+
+<!-- ================= FLOATING WA ================= -->
+<a class="float-wa" href="https://wa.me/6281315971723?text=Halo%20Kedai%20Roti%20Ibu%20Saya%2C%20saya%20mau%20pesan" target="_blank" rel="noopener" aria-label="Pesan via WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.22.6 4.3 1.65 6.1L4 29l8.04-1.6a12.9 12.9 0 0 0 4 0C22.68 27.08 28.08 21.68 28.08 15.04S22.68 3 16.04 3Zm7.2 18.14c-.3.86-1.5 1.58-2.46 1.78-.66.14-1.5.24-4.4-.94-3.7-1.52-6.08-5.3-6.26-5.55-.18-.24-1.5-2-1.5-3.82 0-1.82.94-2.7 1.28-3.06.3-.3.66-.38.9-.38h.64c.2 0 .48-.04.74.56.3.72 1 2.5 1.1 2.68.1.18.16.4.02.64-.12.24-.2.4-.38.62-.2.22-.4.5-.58.66-.2.18-.4.38-.18.76.24.4 1.04 1.72 2.24 2.78 1.54 1.36 2.82 1.8 3.22 2 .4.2.62.16.86-.1.24-.26 1-1.16 1.26-1.56.26-.4.52-.34.86-.2.34.14 2.18 1.02 2.56 1.2.38.18.62.28.72.44.1.16.1.9-.2 1.76Z"/></svg>
+  Pesan
+</a>
+
+<div class="order-toast" id="orderToast" role="status" aria-live="polite" aria-atomic="true">
+  <span class="order-toast-check" aria-hidden="true">✓</span>
+  <span id="orderToastText"></span>
+</div>
+
+<!-- ================= POPUP PROMO ================= -->
+<div class="overlay" id="promoOverlay" aria-hidden="true">
+  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <button class="popup-close" id="popupClose" aria-label="Tutup popup">✕</button>
+    <span class="popup-badge">Rekomendasi hari ini</span>
+    <h3 id="popupTitle">Sudah coba Roti Bakar Cokelat Keju?</h3>
+    <p>Menu paling laris minggu ini, cuma Rp5.000 per porsi. Tinggal chat WhatsApp, kami buatkan hangat begitu kamu datang.</p>
+    <a class="btn btn-primary" href="https://wa.me/6281315971723?text=Halo%2C%20saya%20mau%20pesan%20Roti%20Bakar%20Cokelat%20Keju" target="_blank" rel="noopener">Pesan Roti Bakar Cokelat Keju</a>
+    <p class="popup-sub">atau tutup dan lihat menu lengkap di bawah</p>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
